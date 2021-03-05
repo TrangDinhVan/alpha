@@ -1,0 +1,142 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 11pt;
+    background: #eee;
+    color: #000;
+    line-height: 1;
+    font-weight: 400;
+}
+
+h5{
+    font-size: 1.2em;
+}
+h4{
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.4em;
+}
+h2{
+    font-size: 1.5em;
+}
+h1{
+    font-size: 1.6em;
+}
+
+strong{
+    font-weight: 700;
+}
+
+small, .small{
+    font-size: 0.875em;
+}
+
+.content-text{
+    ins{
+        background: #ff9;
+    }
+    h5, h6{
+        font-size: 1em;
+    }
+    h4{
+        font-size: 1em;
+        @include six{
+            font-size: 1.1em;
+        }
+    }
+    h3{
+        line-height: 1.3;
+    }
+    h2{
+        font-size: 1.2em;
+        @include six{
+            font-size: 1.5em;
+        }
+        line-height: 1.1;
+    }
+    h1{
+        font-size: 1.4em;
+        @include six{
+            font-size: 1.6em;
+        }
+        line-height: 1.1;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    iframe{
+        width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: #666;
+        margin-bottom: 10px;
+        font-weight: 600;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    p, ul, ol, table, & > div, blockquote{
+        margin-bottom: 10px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    ul, ol{
+        list-style: disc;
+        list-style-position: outside;
+        padding-left: 20px;
+        li{
+            margin-bottom: 5px;
+        }
+    }
+    ol{
+        list-style: decimal;
+    }
+    a{
+        color: $primary;
+        text-underline-position: under;
+        &:hover{
+            color: $info;
+        }
+    }
+    em{
+        font-style: italic;
+    }
+    &.img-line{
+        h1, h2, h3, h4, h5, h6{
+            margin-bottom: 10px;
+        }
+        p, ul, ol, table, & > div, blockquote{
+            margin-bottom: 5px;
+        }
+    }
+    table{
+        width: 100% !important;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        th, td{
+            padding: 5px;
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.text-center{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+ins{
+    text-decoration: none;
+}
