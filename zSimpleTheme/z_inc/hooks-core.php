@@ -19,3 +19,6 @@ function zaddadmin(){
     endif;
 }
 add_action( 'wp_head', 'zaddadmin', '10' );
+
+/* Tắt Block Editor */
+add_filter( 'use_block_editor_for_post', '__return_false' );
